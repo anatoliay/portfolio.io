@@ -161,6 +161,10 @@ button {
   font-size: 16px;
 }
 
+input[type=text], input[type=submit], textarea{
+  -webkit-appearance: none;
+} 
+
 input {
   border: none;
   border:1px solid #82b2a8;
