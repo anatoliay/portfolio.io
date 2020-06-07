@@ -1027,7 +1027,8 @@ input {
 @media (max-width: 555px) {
   .b-aboutme-modal {
     max-height: 720px;
-    overflow: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling:touch;
   }
 }
 
