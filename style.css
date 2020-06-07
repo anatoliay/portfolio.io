@@ -161,7 +161,7 @@ button {
   font-size: 16px;
 }
 
-input[type=text], input[type=submit], textarea{
+input[type=text], input[type=submit],input[type=reset] textarea{
   -webkit-appearance: none;
 } 
 
@@ -171,6 +171,7 @@ input {
   margin-bottom: 15px;
 
 }
+
 
 .disable-scroll {
   position: relative;
