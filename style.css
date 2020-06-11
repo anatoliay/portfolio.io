@@ -1969,7 +1969,7 @@ input {
   }
 
   .b-aboutme-modal {
-    max-height: 380px;
+    max-height: 280px;
     overflow: auto;
   }
 
