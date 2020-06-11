@@ -1972,7 +1972,6 @@ input {
     max-height: 480px;
     overflow: auto;
     width: 95%;
-    top: 25%;
   }
 
   .b-icon--bracket {
