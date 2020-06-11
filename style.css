@@ -2142,6 +2142,7 @@ input {
 
  .b-form-block-order {
     max-height: 450px;
+    width: 95%;
     overflow: auto;
     height: 100%;
  }
