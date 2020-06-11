@@ -1868,7 +1868,6 @@ input {
 
    .b-price {
     width: 95%;
-    top: 20%;
   }
 
 }
@@ -1969,7 +1968,7 @@ input {
   }
 
   .b-aboutme-modal {
-    max-height: 280px;
+    max-height: 480px;
     overflow: auto;
   }
 
@@ -2078,7 +2077,7 @@ input {
 
    .b-price {
     width: 95%;
-    max-height: 350px;
+    max-height: 450px;
     overflow: auto;
   }
 
