@@ -2141,7 +2141,7 @@ input {
   }
 
  .b-form-block-order {
-    max-height: 350px;
+    max-height: 450px;
     overflow: auto;
     height: 100%;
  }
