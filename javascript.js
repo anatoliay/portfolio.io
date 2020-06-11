@@ -193,3 +193,21 @@ const links = document.querySelectorAll('a[href*="#"]')
     })
   })
 }
+
+var bracket = document.querySelector('.b-advertising__icon-one');
+  bracket.classList.add('b-advertising__icon--bracket');
+
+var lattice = document.querySelector('.b-advertising__icon-free');
+    lattice.classList.add('b-advertising__icon--lattice');
+
+var div = document.querySelector('.b-advertising__icon-two');
+    div.classList.add('b-advertising__icon--div');
+
+var closing = document.querySelector('.b-advertising__icon-four');
+    closing.classList.add('b-advertising__icon--closing');
+
+var divTwo = document.querySelector('.b-advertising__icon-five');
+    divTwo.classList.add('b-advertising__icon--div-two');
+
+var closingTwo = document.querySelector('.b-advertising__icon-six');
+    closingTwo.classList.add('b-advertising__icon--closing-two');
