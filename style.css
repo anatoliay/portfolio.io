@@ -1641,6 +1641,7 @@ background: linear-gradient(#f90f88, #f35831);
     padding-top: 23px;
     padding-bottom: 23px;
     max-height: 68px;
+    margin: 0 auto;
   }
   
   .b-aboutme {
@@ -2126,6 +2127,8 @@ background: linear-gradient(#f90f88, #f35831);
 
   .b-form-block {
     max-width:280px;
+    max-height: 485px;
+    overflow: auto;
   }
 
   .b-form-block__form {
