@@ -211,3 +211,4 @@ var divTwo = document.querySelector('.b-advertising__icon-five');
 
 var closingTwo = document.querySelector('.b-advertising__icon-six');
     closingTwo.classList.add('b-advertising__icon--closing-two');
+
