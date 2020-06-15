@@ -2411,7 +2411,7 @@ background: linear-gradient(#f90f88, #f35831);
   }
 
  .b-form-block-order {
-    max-height: 450px;
+    max-height: 550px;
     width: 95%;
     overflow: auto;
     height: 100%;
