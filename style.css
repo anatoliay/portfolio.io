@@ -578,15 +578,6 @@ input {
   cursor: pointer;
 }
 
-
-
- 
-
-  
-
-
- 
-
 /* MAIN */
 .b-icon {
   position: absolute;
@@ -860,6 +851,7 @@ input {
   width: 100%;
   height: 100%;
 }
+
 /* Модальное окно прайс */
 .b-price {
   display: none;
@@ -1991,6 +1983,43 @@ background: linear-gradient(#f90f88, #f35831);
   }
 }
 
+@media (max-width: 980px) {
+  .b-advertising__title {
+    font-size: 30px;
+    padding-left: 40px;
+  }
+
+  .b-advertising__title::after {
+    right: auto;
+  }
+
+  .b-advertising__page {
+    padding-left: 40px;
+  }
+
+  .b-advertising__page::before {
+    left: 30px;
+  }
+  
+  .b-footer__contact {
+    padding-right: 0;
+  }
+
+  .b-footer__number,.b-footer__mail {
+      font-size: 16px;
+  }
+
+  .icon-phone::before {
+    padding-right: 10px;
+  }
+
+  .icon-mail-alt::before {
+    font-size: 14px;
+    padding-top: 2px;
+    padding-right: 10px;
+}
+}
+
 @media (max-width:767px) {
 
   /* CONTAINER */
@@ -2052,13 +2081,13 @@ background: linear-gradient(#f90f88, #f35831);
   text-align: center;
 }
 
-.b-nav__listed--bottom {
+  .b-nav__listed--bottom {
   margin-bottom: 30px;
-}
+  }
 
-.b-nav__link:hover {
+  .b-nav__link:hover {
   color: #ff8f5a;
-}
+  }
 
   .b-close-burger {
     display: block;
@@ -2127,13 +2156,12 @@ background: linear-gradient(#f90f88, #f35831);
 
   .b-form-block {
     max-width:280px;
-    max-height: 407px;
-    overflow: auto;
   }
 
   .b-form-block__form {
     font-size: 18px;
     max-width:280px;
+    margin: 0 auto;
   }
 
   .b-form-block__name,.b-form-block__number {
@@ -2322,7 +2350,7 @@ background: linear-gradient(#f90f88, #f35831);
    .b-price {
     width: 95%;
     height: 100%;
-    max-height: 450px;
+    max-height: 750px;
     overflow: auto;
   }
 
@@ -2403,11 +2431,13 @@ background: linear-gradient(#f90f88, #f35831);
     padding-top:40px;
     padding-bottom:41px;
   } 
+
   .b-advertising__icon--bracket,
   .b-advertising__icon--div,
   .b-advertising__icon--closing {
     display: none;
   }
+
   .b-advertising__title {
     font-size: 28px;
     letter-spacing: 0;
@@ -2416,6 +2446,7 @@ background: linear-gradient(#f90f88, #f35831);
     width: 280px;
     padding-left: 0;
   }
+
   .b-advertising__title::after {
     right: auto;
   }
