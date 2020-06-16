@@ -173,7 +173,7 @@ var close = document.querySelector('.b-form-order__close');
   		
   		}
  	}
- }
+}
 // условие чтобы ссылки пропадали только при заданном разрешении //
   var burgerMenu = window.matchMedia("(max-width: 1360px)")
   	myFunction(burgerMenu) 

@@ -1569,6 +1569,12 @@ background: linear-gradient(#f90f88, #f35831);
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .b-nav__listed--bottom {
@@ -1847,6 +1853,8 @@ background: linear-gradient(#f90f88, #f35831);
         -ms-flex-align: center;
             align-items: center;
     padding-bottom:83px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .b-advertising__title {
@@ -1984,6 +1992,23 @@ background: linear-gradient(#f90f88, #f35831);
 }
 
 @media (max-width: 980px) {
+
+  .b-aboutme__page {
+    font-size: 20px;
+  }
+
+  .b-aboutme__title {
+    font-size: 45px;
+  }
+
+  .b-aboutme__img-box {
+    left: -35px;
+  }
+
+  .b-aboutme__background {
+    right: -350px;
+  }
+
   .b-advertising__title {
     font-size: 30px;
     padding-left: 40px;
@@ -2000,13 +2025,17 @@ background: linear-gradient(#f90f88, #f35831);
   .b-advertising__page::before {
     left: 30px;
   }
-  
+
+  .b-nav__list {
+    max-width: 100px;
+  }
+
   .b-footer__contact {
     padding-right: 0;
   }
 
   .b-footer__number,.b-footer__mail {
-      font-size: 16px;
+      font-size: 20px;
   }
 
   .icon-phone::before {
@@ -2017,7 +2046,16 @@ background: linear-gradient(#f90f88, #f35831);
     font-size: 14px;
     padding-top: 2px;
     padding-right: 10px;
-}
+  }
+
+  .b-icon--div {
+    display: none;
+  }
+
+  .b-icon--closing {
+    display: none;
+  }
+
 }
 
 @media (max-width:767px) {
@@ -2079,8 +2117,6 @@ background: linear-gradient(#f90f88, #f35831);
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 
   .b-nav__listed--bottom {
@@ -2153,7 +2189,7 @@ background: linear-gradient(#f90f88, #f35831);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
     position: absolute;
-    left: 117px;
+    right: -148px;
   }
 
   .b-form-block {
@@ -2252,6 +2288,7 @@ background: linear-gradient(#f90f88, #f35831);
   }
 
   .b-icon--div {
+    display: block;
     top: 91px;
     left: 227px;
     font-size: 15px;
@@ -2265,6 +2302,7 @@ background: linear-gradient(#f90f88, #f35831);
   }
 
   .b-icon--closing {
+    display: block;
     top: 28px;
     font-size: 18px;
     transform: rotate(-28deg);
