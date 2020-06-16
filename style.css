@@ -2079,6 +2079,8 @@ background: linear-gradient(#f90f88, #f35831);
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
   .b-nav__listed--bottom {
