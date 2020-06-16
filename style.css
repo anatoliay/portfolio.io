@@ -2180,7 +2180,7 @@ background: linear-gradient(#f90f88, #f35831);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     position: absolute;
-    left: 132px;
+    
   }
 
   .b-close-burger__line--two {
@@ -2189,7 +2189,6 @@ background: linear-gradient(#f90f88, #f35831);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
     position: absolute;
-    right: -148px;
   }
 
   .b-form-block {
