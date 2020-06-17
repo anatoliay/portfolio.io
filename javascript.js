@@ -140,20 +140,24 @@ var close = document.querySelector('.b-form-order__close');
  var overlayMobil = document.querySelector('.overlay');
 
 
-  	buttonMobile.onclick = function() {
-  		menuMobil.style.display = "flex";
-  		closeMenu.style.display = "block";
-  		disableScroll();
-  	}
+  buttonMobile.onclick = function() {
+      menuMobil.style.display = "flex";
+      closeMenu.style.display = "block";
+      disableScroll();
+    }
 
-  	closeMenu.onclick = function() {
-  		menuMobil.style.display = "none";
-  		overlayMobil.style.display = "none";
-  		enableScroll();
-  	}
-
+   
+      closeMenu.onclick = function() {
+      menuMobil.style.display = "none";
+      overlayMobil.style.display = "none";
+      enableScroll();
+    }
+     
   	function myFunction (burgerMenu) {
  	if (burgerMenu.matches) {
+
+  
+
 
  	linkServices.onclick = function() {
   		menuMobil.style.display = "none";
@@ -175,7 +179,7 @@ var close = document.querySelector('.b-form-order__close');
  	}
 }
 // условие чтобы ссылки пропадали только при заданном разрешении //
-  var burgerMenu = window.matchMedia("(max-width: 1360px)")
+  var burgerMenu = window.matchMedia("(max-width: 1360px")
   	myFunction(burgerMenu) 
   	burgerMenu.addListener(myFunction)
 
@@ -212,3 +216,21 @@ var divTwo = document.querySelector('.b-advertising__icon-five');
 var closingTwo = document.querySelector('.b-advertising__icon-six');
     closingTwo.classList.add('b-advertising__icon--closing-two');
 
+
+var menuMobil = document.querySelector('.b-nav--mobil');
+var linkServices = document.querySelector('.services-js');
+ var linkPortfolio = document.querySelector('.portfolio-js');
+ var linkCost = document.querySelector('.cost-js')
+
+$(window).resize(function() {
+ if ($(window).width() > 1360) {
+  linkServices.onclick = function() {
+      menuMobil.style.display = "block";
+ }
+
+ closeMenu.onclick = function() {
+      menuMobil.style.display = "block";
+}
+}
+
+})
