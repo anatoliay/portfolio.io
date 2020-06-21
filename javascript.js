@@ -152,24 +152,48 @@ var close = document.querySelector('.b-form-order__close');
       enableScroll();
     }
 
-  linkServices.onclick = function() {
+
+    function myFunction(x) {
+  if (x.matches) { // If media query matches
+     linkServices.onclick = function() {
       menuMobil.style.display = "none";
       overlayMobil.style.display = "none";
-      enableScroll();
+       enableScroll();
     }
 
     linkPortfolio.onclick = function() {
       menuMobil.style.display = "none";
-      enableScroll();
-      
-    
+       enableScroll();
     }
      
     linkCost.onclick = function () {
       menuMobil.style.display = "none";
-      enableScroll();
+       enableScroll();
+    }
+  } 
 
+  else {
+
+     linkServices.onclick = function() {
+      menuMobil.style.display = "block";
+    }
+
+     linkPortfolio.onclick = function() {
+      menuMobil.style.display = "block";
+    }
+ 
+    linkCost.onclick = function () {
+      menuMobil.style.display = "block";
+    }
+  }
 }
+
+var x = window.matchMedia("(max-width: 1361px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction)
+
+
+  
 var bracket = document.querySelector('.b-advertising__icon-one');
   bracket.classList.add('b-advertising__icon--bracket');
 
@@ -221,47 +245,9 @@ var portfolio = document.querySelector('.b-examples');
 });
 
 
-function myFunction(x) {
-  if (x.matches) { // If media query matches
-     linkServices.onclick = function() {
-      menuMobil.style.display = "none";
-      overlayMobil.style.display = "none";
-      enableScroll();
-    }
 
-    linkPortfolio.onclick = function() {
-      menuMobil.style.display = "none";
-      enableScroll();
-      
-    
-    }
-     
-    linkCost.onclick = function () {
-      menuMobil.style.display = "none";
-      enableScroll();
 
-}
-  } else {
 
-  linkServices.onclick = function() {
-      menuMobil.style.display = "block";
-    }
-
-     linkPortfolio.onclick = function() {
-      menuMobil.style.display = "block";
-    
-    }
-     
-    linkCost.onclick = function () {
-      menuMobil.style.display = "block";
-  
-}
-  }
-}
-
-var x = window.matchMedia("(max-width: 1361px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction)
 
 
 
