@@ -1,31 +1,30 @@
-// Универсальный код отключения скролла //
 var body = document.body;
 
 function disableScroll() {
-	var pagePosition = window.scrollY;
-	body.classList.add('disable-scroll');
-	body.dataset.position = pagePosition;
-	body.style.top = -pagePosition + 'px';
+  var pagePosition = window.scrollY;
+  body.classList.add('disable-scroll');
+  body.dataset.position = pagePosition;
+  body.style.top = -pagePosition + 'px';
 }
 
 function enableScroll() {
-	var pagePosition = parseInt(body.dataset.position, 10);
-	body.style.top = 'auto';
-	body.classList.remove('disable-scroll');
-	window.scroll({top:pagePosition, left:0});
+  var pagePosition = parseInt(body.dataset.position, 10);
+  body.style.top = 'auto';
+  body.classList.remove('disable-scroll');
+  window.scroll({top:pagePosition, left:0});
 }
-// конец //
+
 var button = document.querySelector('.b-buttonjs');
 var model = document.querySelector('.b-form-blockJs');
 var overlay = document.querySelector('.js-overlay-modal');
 var close = document.querySelector('.b-form-block__close');
 var body = document.body
 
-	button.onclick = function () {
-		model.style.display = "block";
-		overlay.style.display = "block";
-		disableScroll();
-	}
+  button.onclick = function () {
+    model.style.display = "block";
+    overlay.style.display = "block";
+    disableScroll();
+  }
 
 
  
@@ -35,15 +34,15 @@ var close = document.querySelector('.b-form-block__close');
 var mobilbutton = document.querySelector('.b-buttonjs-mobil');
 
  mobilbutton.onclick = function() {
- 	model.style.display = "block";
- 	overlay.style.display = "block";
- 	disableScroll();
+  model.style.display = "block";
+  overlay.style.display = "block";
+  disableScroll();
  }
 
  close.onclick = function() {
- 	model.style.display = "none";
- 	overlay.style.display = "none";
- 	enableScroll();
+  model.style.display = "none";
+  overlay.style.display = "none";
+  enableScroll();
  }
 
 var mobilButton = document.querySelector('.b-buttonjs-footer');
@@ -54,15 +53,15 @@ var close = document.querySelector('.b-form-block__close');
 
 
  mobilButton.onclick = function () {
- 	model.style.display = "block";
- 	overlay.style.display = "block";
- 	disableScroll();
+  model.style.display = "block";
+  overlay.style.display = "block";
+  disableScroll();
  }
 
  close.onclick = function() {
- 	model.style.display = "none";
- 	overlay.style.display = "none";
- 	enableScroll();
+  model.style.display = "none";
+  overlay.style.display = "none";
+  enableScroll();
  }
 
 
@@ -71,16 +70,16 @@ var close = document.querySelector('.b-form-block__close');
  var close = document.querySelector('.b-aboutme-modal__close');
 
  buttonMe.onclick = function (event) {
- 	 aboutMe.style.display = "block";
- 	 overlay.style.display = "block";
- 	 disableScroll();
- 	 event.preventDefault();
+   aboutMe.style.display = "block";
+   overlay.style.display = "block";
+   disableScroll();
+   event.preventDefault();
  }
 
  close.onclick = function () {
- 	aboutMe.style.display = "none";
- 	overlay.style.display = "none";
- 	enableScroll();
+  aboutMe.style.display = "none";
+  overlay.style.display = "none";
+  enableScroll();
  };
 
 var model = document.querySelector('.b-form-blockJs');
@@ -90,17 +89,17 @@ var priceModal = document.querySelector('.b-price');
 var close = document.querySelector('.b-button-price-js');
 
 
-	buttonPrice.onclick = function(event) {
-		priceModal.style.display = "block";
-		overlay.style.display = "block";
-		disableScroll();
-		event.preventDefault();
-	}
+  buttonPrice.onclick = function(event) {
+    priceModal.style.display = "block";
+    overlay.style.display = "block";
+    disableScroll();
+    event.preventDefault();
+  }
 
-	close.onclick = function () {
- 	priceModal.style.display = "none";
- 	overlay.style.display = "none";
- 	enableScroll();
+  close.onclick = function () {
+  priceModal.style.display = "none";
+  overlay.style.display = "none";
+  enableScroll();
  };
 
  
@@ -110,28 +109,28 @@ var modalOrder = document.querySelector('.b-form-block-order-js');
 var overlay = document.querySelector('.js-overlay-modal');
 var close = document.querySelector('.b-form-order__close');
 
-	button.onclick = function () {
-		modalOrder.style.display = "block";
-		overlay.style.display = "block";
-		disableScroll();
-	}
+  button.onclick = function () {
+    modalOrder.style.display = "block";
+    overlay.style.display = "block";
+    disableScroll();
+  }
 
-	close.onclick = function() {
- 	modalOrder.style.display = "none";
- 	overlay.style.display = "none";
- 	enableScroll();
+  close.onclick = function() {
+  modalOrder.style.display = "none";
+  overlay.style.display = "none";
+  enableScroll();
  }
 
-	overlay.onclick = function () {
- 		model.style.display = "none";
- 		aboutMe.style.display = "none";
- 		priceModal.style.display = "none";
- 		overlay.style.display = "none";
- 		modalOrder.style.display = "none";
- 		enableScroll();
- 	}
+  overlay.onclick = function () {
+    model.style.display = "none";
+    aboutMe.style.display = "none";
+    priceModal.style.display = "none";
+    overlay.style.display = "none";
+    modalOrder.style.display = "none";
+    enableScroll();
+  }
 
- var buttonMobile = document.querySelector('.b-burger-boxjs');
+   var buttonMobile = document.querySelector('.b-burger-boxjs');
  var menuMobil = document.querySelector('.b-nav--mobil');
  var closeMenu = document.querySelector('.b-close-burger');
  var linkServices = document.querySelector('.services-js');
@@ -140,64 +139,37 @@ var close = document.querySelector('.b-form-order__close');
  var overlayMobil = document.querySelector('.overlay');
 
 
-  buttonMobile.onclick = function() {
+    buttonMobile.onclick = function() {
       menuMobil.style.display = "flex";
       closeMenu.style.display = "block";
       disableScroll();
+
     }
 
-   
-      closeMenu.onclick = function() {
+    closeMenu.onclick = function() {
       menuMobil.style.display = "none";
       overlayMobil.style.display = "none";
       enableScroll();
     }
+
+  linkServices.onclick = function() {
+      menuMobil.style.display = "none";
+      overlayMobil.style.display = "none";
+      enableScroll();
+    }
+
+    linkPortfolio.onclick = function() {
+      menuMobil.style.display = "none";
+      enableScroll();
+      
+    
+    }
      
-  	function myFunction (burgerMenu) {
- 	if (burgerMenu.matches) {
+    linkCost.onclick = function () {
+      menuMobil.style.display = "none";
+      enableScroll();
 
-  
-
-
- 	linkServices.onclick = function() {
-  		menuMobil.style.display = "none";
-  		overlayMobil.style.display = "none";
-  		enableScroll();
-  	}
-
-  	linkPortfolio.onclick = function() {
-  		menuMobil.style.display = "none";
-  		enableScroll();
-  	
-  	}
-  	 
-  	linkCost.onclick = function () {
-  		menuMobil.style.display = "none";
-  		enableScroll();
-  		
-  		}
- 	}
 }
-// условие чтобы ссылки пропадали только при заданном разрешении //
-  var burgerMenu = window.matchMedia("(max-width: 1360px")
-  	myFunction(burgerMenu) 
-  	burgerMenu.addListener(myFunction)
-
-// Код плавного перехода по якорям ссылок //
-const links = document.querySelectorAll('a[href*="#"]')
-	for (let link of links) {
-  link.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = link.getAttribute('href').substr(1)
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
-}
-
 var bracket = document.querySelector('.b-advertising__icon-one');
   bracket.classList.add('b-advertising__icon--bracket');
 
@@ -217,20 +189,81 @@ var closingTwo = document.querySelector('.b-advertising__icon-six');
     closingTwo.classList.add('b-advertising__icon--closing-two');
 
 
-var menuMobil = document.querySelector('.b-nav--mobil');
-var linkServices = document.querySelector('.services-js');
- var linkPortfolio = document.querySelector('.portfolio-js');
- var linkCost = document.querySelector('.cost-js')
+function scrollTo(element) {
+  window.scroll({
+    left:0,
+    top:element.offsetTop,
+    behavior: "smooth"
+  })
+}
 
-$(window).resize(function() {
- if ($(window).width() > 1360) {
+var services = document.querySelector('.b-skills')
+   linkServices.addEventListener('click', () => {
+    scrollTo(services);
+})
+
+var portfolio = document.querySelector('.b-examples');
+  linkPortfolio.addEventListener('click', () => {
+  scrollTo(portfolio);
+
+  })
+
+  var cost = document.querySelector('.link-price');
+  linkCost.addEventListener('click', () => {
+  scrollTo(cost)
+
+  })
+
+  $(window).resize(function() {
+    if ($(window).width() > 1360) {
+      $('.b-nav--mobil').show();
+};
+});
+
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+     linkServices.onclick = function() {
+      menuMobil.style.display = "none";
+      overlayMobil.style.display = "none";
+      enableScroll();
+    }
+
+    linkPortfolio.onclick = function() {
+      menuMobil.style.display = "none";
+      enableScroll();
+      
+    
+    }
+     
+    linkCost.onclick = function () {
+      menuMobil.style.display = "none";
+      enableScroll();
+
+}
+  } else {
+
   linkServices.onclick = function() {
       menuMobil.style.display = "block";
- }
+    }
 
- closeMenu.onclick = function() {
+     linkPortfolio.onclick = function() {
       menuMobil.style.display = "block";
+    
+    }
+     
+    linkCost.onclick = function () {
+      menuMobil.style.display = "block";
+  
 }
+  }
 }
 
-})
+var x = window.matchMedia("(max-width: 1361px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction)
+
+
+
+
+

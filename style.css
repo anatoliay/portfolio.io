@@ -487,6 +487,9 @@ input {
   display: flex;
 }
 
+.b-nav--mobil {
+  display: block;
+}
 
 .b-nav__list {
   width: 280px;
@@ -1534,9 +1537,6 @@ background: linear-gradient(#f90f88, #f35831);
 
   }
 
-  .b-nav--hidden {
-    display: none;
-  }
 
   .b-nav--mobil {
   width: 100%;
@@ -2613,4 +2613,4 @@ background: linear-gradient(#f90f88, #f35831);
 
 
 
-
+/*b-header__navjs*/
