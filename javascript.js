@@ -130,7 +130,7 @@ var close = document.querySelector('.b-form-order__close');
     enableScroll();
   }
 
-   var buttonMobile = document.querySelector('.b-burger-boxjs');
+ var buttonMobile = document.querySelector('.b-burger-boxjs');
  var menuMobil = document.querySelector('.b-nav--mobil');
  var closeMenu = document.querySelector('.b-close-burger');
  var linkServices = document.querySelector('.services-js');
@@ -153,8 +153,8 @@ var close = document.querySelector('.b-form-order__close');
     }
 
 
-    function myFunction(x) {
-  if (x.matches) { // If media query matches
+function myFunction(x) {
+  if (x.matches) {
      linkServices.onclick = function() {
       menuMobil.style.display = "none";
       overlayMobil.style.display = "none";
@@ -189,8 +189,8 @@ var close = document.querySelector('.b-form-order__close');
 }
 
 var x = window.matchMedia("(max-width: 1361px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction)
+  myFunction(x) 
+    x.addListener(myFunction)
 
 
   

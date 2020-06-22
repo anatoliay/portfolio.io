@@ -2120,11 +2120,11 @@ background: linear-gradient(#f90f88, #f35831);
 }
 
   .b-nav__listed--bottom {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .b-nav__link:hover {
-  color: #ff8f5a;
+    color: #ff8f5a;
   }
 
   .b-close-burger {
@@ -2611,6 +2611,11 @@ background: linear-gradient(#f90f88, #f35831);
 
 }
 
+@media (max-width:767px) and (orientation: landscape)  {
+ .b-form-block {
+    height: 100%;
+    max-height: 370px;
+    overflow: auto;
+ }
+}
 
-
-/*b-header__navjs*/
