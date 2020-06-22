@@ -1579,6 +1579,7 @@ background: linear-gradient(#f90f88, #f35831);
 
 .b-nav__listed--bottom {
   margin-bottom: 30px;
+  padding-right: 0;
 }
   .b-burger {
     display:block;
