@@ -240,9 +240,14 @@ var portfolio = document.querySelector('.b-examples');
 
   $(window).resize(function() {
     if ($(window).width() > 1360) {
-      $('.b-nav--mobil').show();
-};
-});
+      $('.b-nav--mobil').show()
+      }
+      
+    else {
+       $('.b-nav--mobil').hide()
+    }
+})
+
 
 
 
