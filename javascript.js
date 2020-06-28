@@ -251,12 +251,12 @@ var portfolio = document.querySelector('.b-examples');
 
 var submitName = document.querySelector('.b-form-block__name');
 var submitNumber = document.querySelector('.b-form-block__number');
+
 function fank() {
-  if (submitName.value, submitNumber.value) {
+  if (submitName.value && submitNumber.value) {
     window.location.assign("fank.html")
 
   }
-
 }
 
 

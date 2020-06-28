@@ -33,6 +33,9 @@
       </div>
       <div class="b-form-block b-form-blockJs">
         <form class="b-form-block__form" method="POST">
+        	<input type="hidden" name="project_name">
+        	<input type="hidden" name="admin_email" value="tolya467@mail.ru">
+        	<input type="hidden" name="form_subject" value="Данные">
           <div class="b-form-block__close close-js">
             <span class="b-form-block__linear b-form-block__linear--first"></span>
             <span class="b-form-block__linear b-form-block__linear--two "></span>
@@ -193,12 +196,12 @@
           <input type="text" name="name" id="name_surname" class="b-form-block__name" placeholder="Анатолий Сергеевич">
           <label for="number" class="b-form-block__label">Введете ваш номер телефона</label>
           <input type="tel" name="number" id="phone" placeholder="+7 (987) 687-13-71"  class="b-form-block__number">
-          <label> 
-            <span>ТЗ</span>
-          <input type="file" name="file">
+          <label class="b-form-file"> 
+          <input type="file" name="file" class="file">
+            <span>Добавьте ваш файл c ТЗ</span>
           </label>
-          <label> 
-            <span>Дизайн сайта</span>
+          <label class="b-form-file"> 
+            <span>Добавьте ваш файл c дизайном сайта</span>
           <input type="file" name="file">
           </label>
           <div class="b-form-block__box">

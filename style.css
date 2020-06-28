@@ -2653,3 +2653,26 @@ background: linear-gradient(#f90f88, #f35831);
 .b-form-fank__link:active {
   background-color:#31293c;
 }
+
+
+
+.b-form-block__box {
+  padding-top: 15px;
+}
+
+.b-form-file {
+  padding-top: 10px;
+}
+
+.b-form-file span {
+  background-color: #fff;
+  height: 60px;
+  width: 200px;
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.b-form-file input {
+  display: none;
+}

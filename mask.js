@@ -33,13 +33,31 @@ $('form').each(function () {
 					data: th.serialize(),
 					// eslint-disable-next-line func-names
 				}).done(() => {
+					console.log('Hello')
+					th.trigger('reset');
+				});
 
+				return false;
+				},
+				
+
+				submitHandler(form) {
+					let th = $(form);
+
+					$.ajax({
+						type: 'POST',
+						url: 'mail.php',
+						data: th.serialize(),
+				}).done(() => {
+					console.log('Отправлено')
 					th.trigger('reset');
 				});
 
 				return false;
 				}
 			});
-			});
+
+
+});
 });
 
