@@ -2668,9 +2668,14 @@ background: linear-gradient(#f90f88, #f35831);
   background-color: #fff;
   height: 60px;
   width: 200px;
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
   font-weight: bold;
+}
+
+.b-form-file span:hover {
+  color: #1a7eee;
+  transition: 0.3s;
 }
 
 .b-form-file input {

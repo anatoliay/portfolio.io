@@ -32,7 +32,7 @@
         <button type="submit" class="b-button b-button--hiden b-buttonjs">Заказать звонок</button>
       </div>
       <div class="b-form-block b-form-blockJs">
-        <form class="b-form-block__form" method="POST">
+        <form class="b-form-block__form" action="mail.php" method="POST">
         	<input type="hidden" name="project_name">
         	<input type="hidden" name="admin_email" value="tolya467@mail.ru">
         	<input type="hidden" name="form_subject" value="Данные">
@@ -186,7 +186,7 @@
       </div>
       <a class="link link--center link__js">Заказать проект</a>
       <div class="b-form-block-order b-form-block-order-js">
-      <form class="b-form-block__form">
+      <form class="b-form-block__form" method="POST">
           <div class="b-form-order__close">
             <span class="b-form-block__linear b-form-block__linear--first"></span>
             <span class="b-form-block__linear b-form-block__linear--two "></span>
@@ -205,8 +205,8 @@
           <input type="file" name="file">
           </label>
           <div class="b-form-block__box">
-            <input type="submit" value="Отправить" class="b-form-block__submit">
-            <input type="reset" value="Сброс" class="b-form-block__reset">
+            <button type="submit"  class="b-form-block__submit">Отправить</button>
+            <button type="reset" class="b-form-block__reset">Сброс</button>
           </div>
         </form>
       </div>
@@ -258,11 +258,11 @@
     </div>
   </footer>
   <script src="sniper/swiper.min.js"></script>
-  <script src="jquery-3.5.1.min.js"></script>
+  <script src="Js/jquery-3.5.1.min.js"></script>
   <script src="mask/jquery.inputmask.min.js"></script>
-  <script src="jquery.validate.min.js"></script>
-  <script src="slider.js"></script>
-  <script src="mask.js"></script>
-  <script src="javascript.js"></script>
+  <script src="Js/jquery.validate.min.js"></script>
+  <script src="Js/slider.js"></script>
+  <script src="Js/mask.js"></script>
+  <script src="Js/javascript.js"></script>
 </body>
 </html>
