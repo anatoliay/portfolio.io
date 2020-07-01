@@ -213,30 +213,6 @@ var closingTwo = document.querySelector('.b-advertising__icon-six');
     closingTwo.classList.add('b-advertising__icon--closing-two');
 
 
-function scrollTo(element) {
-  window.scroll({
-    left:0,
-    top:element.offsetTop,
-    behavior: "smooth"
-  })
-}
-
-var services = document.querySelector('.b-skills')
-   linkServices.addEventListener('click', () => {
-    scrollTo(services);
-})
-
-var portfolio = document.querySelector('.b-examples');
-  linkPortfolio.addEventListener('click', () => {
-  scrollTo(portfolio);
-
-  })
-
-  var cost = document.querySelector('.link-price');
-  linkCost.addEventListener('click', () => {
-  scrollTo(cost)
-
-  })
 
   $(window).resize(function() {
     if ($(window).width() > 1360) {
@@ -257,6 +233,22 @@ function fank() {
     window.location.assign("fank.html")
 
   }
+}
+
+
+
+const links = document.querySelectorAll('a[href*="#"]')
+	for (let link of links) {
+  link.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = link.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
 }
 
 
