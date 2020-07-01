@@ -237,19 +237,18 @@ function fank() {
 
 
 
-const links = document.querySelectorAll('a[href*="#"]')
-	for (let link of links) {
-  link.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = link.getAttribute('href').substr(1)
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
+function scrollToTop(sectionId) {
+  console.log(sectionId);
+  var targetScroll =  $(sectionId).offset().top;
+  $('html, body').animate({
+      scrollTop: (targetScroll - 100 /* минус сто - это нужный вам отступ, чтобы сделать прокрутку немного выше якоря */ )
+  }, 500);
 }
+
+$(' li a[href*="#"]').on('click', function(){
+	sectionId = $(this).attr('href');
+	scrollToTop(sectionId);
+});
 
 
 
