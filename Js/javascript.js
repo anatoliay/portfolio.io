@@ -192,8 +192,6 @@ var x = window.matchMedia("(max-width: 1361px)")
   myFunction(x) 
     x.addListener(myFunction)
 
-
-  
 var bracket = document.querySelector('.b-advertising__icon-one');
   bracket.classList.add('b-advertising__icon--bracket');
 
@@ -212,36 +210,22 @@ var divTwo = document.querySelector('.b-advertising__icon-five');
 var closingTwo = document.querySelector('.b-advertising__icon-six');
     closingTwo.classList.add('b-advertising__icon--closing-two');
 
-
-
-  $(window).resize(function() {
-    if ($(window).width() > 1360) {
-      $('.b-nav--mobil').show()
-      }
-      
-    else {
-       $('.b-nav--mobil').hide()
-    }
-})
-
-
+var fankBlock = document.querySelector('.b-form-fank');
+var buttonHome = document.querySelector('.b-form-fank__link')
 var submitName = document.querySelector('.b-form-block__name');
 var submitNumber = document.querySelector('.b-form-block__number');
 
 function fank() {
   	if (submitName.value && submitNumber.value) {
-    window.location.assign("fank.html")
-}
-}
+     fankBlock.style.display = 'flex';
+	}
+	
+	buttonHome.onclick = function() {
+		fankBlock.style.display = 'none';
+		model.style.display = 'none';
+		overlay.style.display = 'none';
+		enableScroll()
 
-function scrollToTop(sectionId) {
-  var targetScroll =  $(sectionId).offset().top;
-  $('html, body').animate({
-      scrollTop: (targetScroll - 100)
-  }, 500);
-}
+	}
+} 
 
-$('li a[href*="#"]').on('click', function(){
-	sectionId = $(this).attr('href');
-	scrollToTop(sectionId);
-});

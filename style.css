@@ -2620,20 +2620,33 @@ background: linear-gradient(#f90f88, #f35831);
  }
 }
 
+
+
 .b-form-fank {
+  position:fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
   background: -webkit-linear-gradient(top right, #ff2f96, #ff8f5a);
   background: -o-linear-gradient(top right, #ff2f96, #ff8f5a);
   background: linear-gradient(to bottom left, #ff2f96, #ff8f5a);
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 100;
+}
+
+.b-form-fank {
+ display: none;
 }
 
 .b-form-fank__title {
+  font-size: 30px;
+  font-weight: bold;
   padding-bottom: 30px;
 }
 
