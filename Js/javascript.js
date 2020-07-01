@@ -229,32 +229,19 @@ var submitName = document.querySelector('.b-form-block__name');
 var submitNumber = document.querySelector('.b-form-block__number');
 
 function fank() {
-  if (submitName.value && submitNumber.value) {
+  	if (submitName.value && submitNumber.value) {
     window.location.assign("fank.html")
-
-  }
+}
 }
 
-
-
 function scrollToTop(sectionId) {
-  console.log(sectionId);
   var targetScroll =  $(sectionId).offset().top;
   $('html, body').animate({
-      scrollTop: (targetScroll - 100 /* минус сто - это нужный вам отступ, чтобы сделать прокрутку немного выше якоря */ )
+      scrollTop: (targetScroll - 100)
   }, 500);
 }
 
-$(' li a[href*="#"]').on('click', function(){
+$('li a[href*="#"]').on('click', function(){
 	sectionId = $(this).attr('href');
 	scrollToTop(sectionId);
 });
-
-
-
-
-
-
-
-
-
